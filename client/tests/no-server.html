@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test | Not Paid Reloaded</title>
+    <script src="../library.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <style>* { font-family: "Lato", sans-serif; text-align: center } button { background-color: darkblue; border: none; padding: 10px 30px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; cursor: pointer; color: white; }</style>
+</head>
+<body>
+<h1>Are you seeing this?</h1>
+<div>
+    <button id="yesterday-6">Set due date to yesterday & deadline of 6 days</button><br><br>
+    <button id="yesterday-3">Set due date to yesterday & deadline of 3 days</button><br><br>
+    <button id="yesterday-0">Set due date to yesterday & deadline of 0 days</button><br><br>
+</div>
+<script defer>
+    NotPaidReloaded.config({
+        dueDate: new Date(),
+        daysDeadline: 5
+    })
+    .start()
+</script>
+<script>
+    document.getElementById("yesterday-6").addEventListener("click", () => {
+        NotPaidReloaded.config({
+            dueDate: new Date(Date.now() - (24 * 60 * 60 * 1000)),
+            daysDeadline: 6
+        })
+            .start()
+    })
+
+    document.getElementById("yesterday-3").addEventListener("click", () => {
+        NotPaidReloaded.config({
+            dueDate: new Date(Date.now() - (24 * 60 * 60 * 1000)),
+            daysDeadline: 3
+        })
+            .start()
+    })
+
+    document.getElementById("yesterday-0").addEventListener("click", () => {
+        NotPaidReloaded.config({
+            dueDate: new Date(Date.now() - (24 * 60 * 60 * 1000)),
+            daysDeadline: 0
+        })
+            .start()
+    })
+</script>
+</body>
+</html>

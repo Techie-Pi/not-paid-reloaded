@@ -1,0 +1,12 @@
+{
+  "name": "not-paid-reloaded",
+  "version": "1.0.0",
+  "description": "(from kleampa/not-paid) Client did not pay? Add opacity to the body tag and decrease it every day until their site completely fades away",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "TechiePi",
+  "license": "BSD-3-Clause"
+}

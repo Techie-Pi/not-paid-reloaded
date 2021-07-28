@@ -1,0 +1,14 @@
+{
+  "name": "not-paid-reloaded-server",
+  "version": "1.0.0",
+  "description": "Simple server implementation for Techie-Pi/not-paid-reloaded",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TechiePi",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
