@@ -4,7 +4,7 @@
   "description": "Simple server implementation for Techie-Pi/not-paid-reloaded",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "author": "TechiePi",
   "license": "BSD-3-Clause",

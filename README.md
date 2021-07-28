@@ -41,6 +41,22 @@ NotPaidReloaded
     .start();
 ```
 
+### Setup server
+To start the server you just need to run ``npm run start`` at the ``server/`` folder.
+
+You can customize the data about payments and due dates on the fly modifying the ``server/data/dueDates.json``.
+
+The due dates follow the following structure:
+```json5
+{
+  "hostname": {
+    "paid": false, // If paid is true, the opacity won't be affected
+    "due": "2021-07-27T00:00:00+0000", // Due date in ISO-8601 format
+    "days": 5 // Days after the due when the opacity is going to be 0
+  }
+}
+```
+
 ### Approach to failures
 This library uses an optimistic approach, if there is no data about the website on the backend, the server will
 return ``{"paid":true}`` and if the server fails and there is no fallback, the website will be shown at full opacity.
