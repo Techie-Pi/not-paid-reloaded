@@ -1,6 +1,5 @@
 # Not Paid Reloaded
 
----
 > A revamp of [kleampa/not-paid](https://github.com/kleampa/not-paid) project with some extra features
 
 This project allows freelance developers to add a _small_ layer of protection and control in case a client doesn't pay for the website they requested.
@@ -17,6 +16,8 @@ As in the original project, the opacity is slowly reduced each day after the due
 - ES6+ syntax <sup>✨</sup>
 
 ### Usage
+Add to your page the [``client/library.js``](client/library.js) script (or the available [polyfill](client/library-polyfill.js))
+
 Configuration (without server):
 ```js
 NotPaidReloaded
