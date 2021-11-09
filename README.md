@@ -9,7 +9,7 @@ As in the original project, the opacity is slowly reduced each day after the due
 ### Features
 - Opacity reduction each day (as in [kleampa/not-paid](https://github.com/kleampa/not-paid))
 - Hardcoded due date and deadline (as in [kleampa/not-paid](https://github.com/kleampa/not-paid))
-- _"Outside"_ configuration and startup ``NotPaidReloaded.config({...}).start()`` <sup>✨</sup>
+- Dynamic configuration and startup ``NotPaidReloaded.config({...}).start()`` <sup>✨</sup>
 - Retrieve dynamic data from a server <sup>✨</sup>
 - Failure logging system from the client to the server <sup>✨</sup>
 - Local logging <sup>✨</sup>
