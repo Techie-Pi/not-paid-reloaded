@@ -42,10 +42,23 @@ NotPaidReloaded
     .start();
 ```
 
-### Setup server
-To start the server you just need to run ``npm run start`` at the ``server/`` folder.
+### Setup _new_ server
+To start the server you just need to run ``cargo run`` at the ``server/`` folder.
 
-You can customize the data about payments and due dates on the fly modifying the ``server/data/dueDates.json``.
+You can customize the data about payments and due dates by modifying the ``server/config.toml`` file.
+
+The due dates follow the following structure:
+```toml
+[due_dates."hostname.example"]
+paid = false # If paid is true, the opacity won't be affected
+due = "2021-07-27T00:00:00+0000" # Due date in ISO-8601 (may support TOML dates in the future)
+days = 0 # Days after the due when the opacity is going to be 0
+```
+
+### Setup _old_ server
+To start the server you just need to run ``npm run start`` at the ``server-old/`` folder.
+
+You can customize the data about payments and due dates on the fly modifying the ``server-old/data/dueDates.json``.
 
 The due dates follow the following structure:
 ```json5

@@ -77,3 +77,9 @@ typings/
 
 # IntelliJ-based IDEs
 .idea/
+
+# Rust Target
+target/
+
+# Rust Cargo.lock (shouldn't be commited on binary applications)
+Cargo.lock
